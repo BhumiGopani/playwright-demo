@@ -1,0 +1,15 @@
+name: Run Playwright tests
+
+on: [push]
+
+jobs:
+  build:
+    name: Run Playwright Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+      - name: Install Playwright from 'npm' and Run Tests
+      - uses: microsoft/playwright-github-action@v1.2.0
+        with:
+          args: "npm install && node src/tests/test.js"
