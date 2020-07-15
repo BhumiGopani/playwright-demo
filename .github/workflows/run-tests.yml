@@ -3,11 +3,7 @@
 
 name: Run Playwright tests
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   e2e-tests:
