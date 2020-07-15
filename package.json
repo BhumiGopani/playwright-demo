@@ -1,0 +1,28 @@
+{
+  "name": "playwright-demo-project",
+  "version": "1.0.0",
+  "description": "An example playwright project to see how this works on github actions",
+  "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhumiGopani/playwright-demo.git"
+  },
+  "keywords": [
+    "Playwright",
+    "Automation",
+    "Testing"
+  ],
+  "author": "Bhumi Gopani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhumiGopani/playwright-demo/issues"
+  },
+  "homepage": "https://github.com/BhumiGopani/playwright-demo#readme"
+}
