@@ -6,9 +6,9 @@ const BASE_URL = "https://www.saucedemo.com/";
 // playwright variables
 let page, browser, context;
 
-describe("Test e2e with - PLAYWRIGHT", () => {
+describe("Test e2e with firefox browser", () => {
   beforeEach(async () => {
-    browser = await playwright["chromium"].launch();
+    browser = await playwright["firefox"].launch();
     context = await browser.newContext();
     page = await context.newPage(BASE_URL);
     await page.goto(BASE_URL);
@@ -31,11 +31,9 @@ describe("Test e2e with - PLAYWRIGHT", () => {
   await page.click(".btn_primary");
   await page.click("[fill='currentColor']");
   await page.click(".cart_footer .btn_secondary");
-  await scrollToElement(page, "#item_1_title_link > div");
-  await page.click("#item_1_title_link > div");
+  await page.click("#item_0_title_link > div");
   await page.click(".btn_primary");
   await page.click("[fill='currentColor']");
-  await page.click(".cart_list > :nth-child(4) .btn_secondary");
   await page.click(".cart_footer .btn_secondary");
   await page.click(".bm-burger-button button");
   await page.click("#logout_sidebar_link");
