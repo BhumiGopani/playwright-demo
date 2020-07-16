@@ -15,7 +15,7 @@
     "prettier": "2.0.5"
   },
   "scripts": {
-    "test": "mocha --timeout 15000"
+    "test": "mocha --timeout 50000"
   },
   "repository": {
     "type": "git",
