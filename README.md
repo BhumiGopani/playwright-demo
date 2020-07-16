@@ -4,11 +4,11 @@ Demo for Microsoft Playwright
 
 # installation
 
-`npm i playwright`
+`npm install`
 
 # Execute tests using
 
-`node src/tests/test.js`
+`npm test`
 
 # Notes
 
