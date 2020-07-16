@@ -12,4 +12,4 @@ jobs:
       - name: Install Playwright from 'npm' and Run Tests
       - uses: microsoft/playwright-github-action@v1.2.0
         with:
-          args: "npm install && node src/tests/test.js"
+          args: "npm install && npm test"
