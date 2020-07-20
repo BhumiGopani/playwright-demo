@@ -19,7 +19,8 @@ Demo for Microsoft Playwright
 `rm -rf node_modules`
 `npm install`
 
-# for formatting 
+# for formatting
+
 `npx prettier --write .`
 
 # Reference links
