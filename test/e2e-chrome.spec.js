@@ -22,23 +22,23 @@ describe("Test e2e with chrome browser", () => {
   });
 
   it("Perform e2e", async () => {
-  await page.click("#user-name");
-  await page.type("#user-name", 'standard_user');
-  await page.click("#password");
-  await page.type("#password", 'secret_sauce');
-  await page.click("#login-button");
-  await page.click("#item_4_title_link > div");
-  await page.click(".btn_primary");
-  await page.click("[fill='currentColor']");
-  await page.click(".cart_footer .btn_secondary");
-  await scrollToElement(page, "#item_0_title_link > div");
-  await page.click("#item_0_title_link > div");
-  await page.click(".btn_primary");
-  await page.click("[fill='currentColor']");
-  await scrollToElement(page, ".cart_footer .btn_secondary");
-  await page.click(".cart_footer .btn_secondary");
-  await page.click(".bm-burger-button button");
-  await page.click("#logout_sidebar_link");
+    await page.click("#user-name");
+    await page.type("#user-name", "standard_user");
+    await page.click("#password");
+    await page.type("#password", "secret_sauce");
+    await page.click("#login-button");
+    await page.click("#item_4_title_link > div");
+    await page.click(".btn_primary");
+    await page.click("[fill='currentColor']");
+    await page.click(".cart_footer .btn_secondary");
+    await scrollToElement(page, "#item_0_title_link > div");
+    await page.click("#item_0_title_link > div");
+    await page.click(".btn_primary");
+    await page.click("[fill='currentColor']");
+    await scrollToElement(page, ".cart_footer .btn_secondary");
+    await page.click(".cart_footer .btn_secondary");
+    await page.click(".bm-burger-button button");
+    await page.click("#logout_sidebar_link");
   });
 });
 
